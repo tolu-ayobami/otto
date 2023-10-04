@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(234, 239, 243);
+}
+
+.img{
+    width: 15%;
+}
+
+.fom{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+.labelphone, .labelpassword, .invitationcode{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  
+}
+
+.labelphone input, .labelpassword input, .invitationcode input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 100%;
+    font-size: 16px;
+  
+   
+}
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
+    display: none;
+}
+
+.phoneinput, .passwordinput, .invitationinput{
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.phoneinput, .invitationinput{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.loginbtn{
+    padding: 15px;
+    background-color: rgb(236, 0, 0);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size:large;
+    cursor: pointer;
+   
+}
+
+.login, .signin, .forget, .dashboard{
+    width: 30%;
+    margin: auto;
+    margin-top: 80px;
+    background-color: rgb(234, 239, 243);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(212, 212, 212, 0.2), 0 6px 20px 0 rgba(214, 214, 214, 0.19);
+    
+}
+
+.head{
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+}
+
+.arrow{
+    background-color: aliceblue;
+    text-align: center;
+    width: 40px;
+    padding: 5px;
+    border-radius: 20%;
+    position: absolute;
+    top: 50px;
+    left:8%;
+    padding-bottom: 0;
+    box-shadow: 0 4px 8px 0 rgba(212, 212, 212, 0.2), 0 6px 20px 0 rgba(214, 214, 214, 0.19);
+}
+
+.send{
+    cursor: pointer;
+}
+@media screen and (max-width:900px) {
+    .login, .signin, .forget, .dashboard{
+        width: 91%;
+       box-shadow: none;
+       margin-top: 50px;
+    }
+
+    .labelphone input, .labelpassword input, .invitationcode input{
+
+
+        font-size: 13px;
+    }
+.img{
+    width: 25%;
+}
+
+.arrow{
+    top: 40px;
+}
+    
+}
